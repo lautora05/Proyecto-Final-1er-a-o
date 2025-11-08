@@ -5,10 +5,10 @@ load_dotenv()
 
 CONFIG = {
     'WEATHER_API_KEY': '44390f5f756c4a2fa7e203233251110',
-    'EMAIL_SMTP_SERVER': 'smtp.gmail.com',
-    'EMAIL_SMTP_PORT': 587,
-    'EMAIL_FROM': 'juanirodriguez1306@gmail.com',
-    'EMAIL_PASSWORD': 'vkwx dais ruec iskf',
+    'EMAIL_SMTP_SERVER': '',
+    'EMAIL_SMTP_PORT': ,
+    'EMAIL_FROM': '',
+    'EMAIL_PASSWORD': '',
 }
 
 UMBRALES_ALERTA = {
@@ -70,4 +70,5 @@ COORDENADAS_CIUDADES = {
     "Olavarría": {"lat": -36.9000, "lon": -60.2833},
     "Tres Arroyos": {"lat": -38.3833, "lon": -60.2833},
     "Villa María": {"lat": -32.4167, "lon": -63.2500}
+
 }
