@@ -3,7 +3,7 @@ import random
 from config2 import CONFIG, COORDENADAS_CIUDADES
 
 class WeatherService:
-    @staticmethod
+    
     def obtener_datos_climaticos(ciudad):
         try:
             url = "http://api.weatherapi.com/v1/current.json"
@@ -30,6 +30,7 @@ class WeatherService:
             print("Error al obtener datos climáticos:", e)
             return None
     
-    @staticmethod
+    
     def obtener_coordenadas(ciudad):
+
         return COORDENADAS_CIUDADES.get(ciudad, {"lat": random.uniform(-55, -22), "lon": random.uniform(-73, -54)})
