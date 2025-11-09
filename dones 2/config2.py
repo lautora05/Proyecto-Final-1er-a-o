@@ -1,8 +1,3 @@
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
 CONFIG = {
     'WEATHER_API_KEY': '44390f5f756c4a2fa7e203233251110',
     'EMAIL_SMTP_SERVER': '',
@@ -72,3 +67,4 @@ COORDENADAS_CIUDADES = {
     "Villa María": {"lat": -32.4167, "lon": -63.2500}
 
 }
+
