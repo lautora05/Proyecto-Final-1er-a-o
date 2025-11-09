@@ -4,7 +4,7 @@ from datetime import datetime
 from config2 import CONFIG
 
 class EmailService:
-    @staticmethod
+    
     def enviar_alerta_incendio(drones_alerta):
         try:
             msg = EmailMessage()
@@ -40,7 +40,7 @@ class EmailService:
             print(f"Error al enviar email: {str(e)}")
             return False
     
-    @staticmethod
+    
     def enviar_prueba():
         try:
             msg = EmailMessage()
@@ -58,4 +58,5 @@ class EmailService:
             
         except Exception as e:
             print(f"Error al enviar correo de prueba: {str(e)}")
+
             return False
