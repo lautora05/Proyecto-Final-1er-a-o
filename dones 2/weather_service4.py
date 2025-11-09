@@ -34,3 +34,4 @@ class WeatherService:
     def obtener_coordenadas(ciudad):
 
         return COORDENADAS_CIUDADES.get(ciudad, {"lat": random.uniform(-55, -22), "lon": random.uniform(-73, -54)})
+
