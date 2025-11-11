@@ -27,7 +27,7 @@ class DatabaseProvincias:
             temp_conn = mysql.connector.connect(
                 host='localhost',
                 user='root',
-                password='sharktopus12'
+                password=''
             )
             temp_cursor = temp_conn.cursor()
             temp_cursor.execute("CREATE DATABASE IF NOT EXISTS provincias_db")
@@ -233,4 +233,5 @@ def main():
         db.close()
 
 if __name__ == "__main__":
+
     main()
