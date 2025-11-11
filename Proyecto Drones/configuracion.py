@@ -5,10 +5,10 @@ load_dotenv()
 
 CONFIG = {
     'WEATHER_API_KEY': '44390f5f756c4a2fa7e203233251110',
-    'EMAIL_SMTP_SERVER': '',
-    'EMAIL_SMTP_PORT': ,
-    'EMAIL_FROM': '',
-    'EMAIL_PASSWORD': '',
+    'EMAIL_SMTP_SERVER': 'smtp.gmail.com',
+    'EMAIL_SMTP_PORT':587 ,
+    'EMAIL_FROM': 'juanirodriguez1306@gmail.com',
+    'EMAIL_PASSWORD': 'vkwx dais ruec iskf',
 }
 
 UMBRALES_ALERTA = {
@@ -72,3 +72,4 @@ COORDENADAS_CIUDADES = {
     "Villa María": {"lat": -32.4167, "lon": -63.2500}
 
 }
+
