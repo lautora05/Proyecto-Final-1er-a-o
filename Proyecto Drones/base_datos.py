@@ -58,7 +58,7 @@ class DatabaseProvincias:
             print(f" Error creando tabla: {err}")
             return False
     
-    def insert_provincias_directo(self):
+    def provincias(self):
         
         PROVINCIAS_DATA = {
             "Buenos Aires": {"lat": -34.6037, "lon": -58.3816},
@@ -219,7 +219,7 @@ def main():
             return
         
         
-        if not db.insert_provincias_directo():
+        if not db.provincias():
             return
         
         
@@ -235,3 +235,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
