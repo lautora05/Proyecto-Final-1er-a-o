@@ -45,10 +45,6 @@ class ConfigTab(QWidget):
         
         layout_botones = QHBoxLayout()
         
-        boton_actualizar_umbrales = QPushButton("Actualizar Umbrales")
-        boton_actualizar_umbrales.clicked.connect(self.actualizar_umbrales)
-        layout_botones.addWidget(boton_actualizar_umbrales)
-        
         boton_simular_alerta = QPushButton("Simular Alerta de Prueba")
         boton_simular_alerta.clicked.connect(self.simular_alerta_prueba)
         layout_botones.addWidget(boton_simular_alerta)
@@ -96,4 +92,5 @@ class ConfigTab(QWidget):
         else:
             error_msg = "✗ Error al enviar correo de prueba"
             self.parent.registrar_alerta(error_msg)
+
             QMessageBox.critical(self, "Error", error_msg)
